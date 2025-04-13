@@ -1,0 +1,69 @@
+[global]
+    ### Display ###
+    monitor = 0                 # Escolhe o monitor onde as notificações aparecem (0 = principal)
+    follow = none              # Define se a notificação segue a janela ativa, mouse ou monitor (none = estática)
+
+    ### Geometry ###
+    width = (0,400)            # Largura das notificações (mínimo 0, máximo 400 pixels)
+    height = (0, 300)          # Altura máxima da notificação (0 = sem mínimo, 300 = máximo)
+    origin = top-right         # Posição onde as notificações surgem (canto superior direito)
+    offset = (10, 50)          # Espaço a partir da borda do ecrã (x, y)
+    scale = 0                  # Escala de redimensionamento (0 = desativado)
+    notification_limit = 20    # Número máximo de notificações visíveis ao mesmo tempo
+
+    ### Default Icon ###
+    icon_path = "/home/adrxlv/Imagens/appointment-reminders.png"  # Define o ícone padrão para notificações sem ícone
+
+    ### Progress bar ###
+    progress_bar = true                # Ativa a barra de progresso (útil para downloads, por exemplo)
+    progress_bar_height = 10           # Altura da barra de progresso
+    progress_bar_frame_width = 1       # Espessura da borda da barra de progresso
+    progress_bar_min_width = 150       # Largura mínima da barra de progresso
+    progress_bar_max_width = 300       # Largura máxima da barra de progresso
+    progress_bar_corner_radius = 0     # Arredondamento dos cantos da barra (0 = quadrado)
+    progress_bar_corners = all         # Aplica o arredondamento a todos os cantos
+    icon_corner_radius = 0             # Arredondamento dos cantos do ícone
+    icon_corners = all                 # Arredondamento aplicado a todos os cantos do ícone
+    indicate_hidden = yes              # Mostra um ícone ou sinal quando existem notificações escondidas
+    transparency = 0                   # Transparência geral da notificação (0 = opaco)
+    separator_height = 2               # Altura da linha de separação entre notificações
+    padding = 8                        # Espaço interno (padding geral)
+    horizontal_padding = 8             # Padding horizontal extra
+    text_icon_padding = 0              # Espaço entre ícone e texto
+    frame_width = 3                    # Espessura da moldura (borda) da notificação
+    frame_color = "#504945"            # Cor da moldura (estilo Gruvbox)
+    gap_size = 0                       # Espaço entre múltiplas notificações empilhadas
+    separator_color = frame            # Cor da linha de separação (usa a mesma da moldura)
+    sort = yes                         # Ordena as notificações por urgência
+
+    ### Text ###
+    font = Monospace 8                 # Tipo e tamanho da fonte usada nas notificações
+    line_height = 0                    # Altura da linha (0 = automático com base na fonte)
+    markup = full                      # Permite HTML/markup nas notificações (bold, itálico, etc.)
+    format = "<b>%s</b>\n%b"           # Formato da notificação: título (%s), corpo (%b)
+    alignment = left                   # Alinhamento do texto (left, center, right)
+    vertical_alignment = center        # Alinhamento vertical do conteúdo
+    show_age_threshold = 60            # Mostra a idade da notificação (segundos) após este tempo
+    ellipsize = middle                 # Cortar texto com "..." no meio, caso ultrapasse a largura
+    ignore_newline = no                # Mostra quebras de linha reais (não ignora '\n')
+    stack_duplicates = true            # Agrupa notificações repetidas (com contador)
+    hide_duplicate_count = false       # Mostra quantas vezes a notificação duplicada apareceu
+    show_indicators = yes              # Mostra indicadores (como barra de progresso ou contador)
+
+    ### Icons ###
+    icon_position = left               # Posição do ícone (left, right, top, off)
+
+[urgency_low]
+    frame_color = "#3c3836"            # Cor da moldura para notificações de baixa urgência
+    foreground = "#a89984"             # Cor do texto (neutra)
+    background = "#282828"             # Cor de fundo (escuro)
+
+[urgency_normal]
+    frame_color = "#d79921"            # Cor da moldura (amarelo Gruvbox)
+    foreground = "#ebdbb2"             # Cor do texto (bege claro)
+    background = "#1d2021"             # Cor de fundo ligeiramente mais escura
+
+[urgency_critical]
+    frame_color = "#cc241d"            # Cor da moldura para notificações críticas (vermelho Gruvbox)
+    foreground = "#fbf1c7"             # Texto em tom muito claro para destaque
+    background = "#282828"             # Fundo escuro, contraste elevado
