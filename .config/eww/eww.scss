@@ -1,0 +1,47 @@
+
+*{
+	all: unset;
+    font-family: "FiraCodeNerdFont", "iosevka nerd font";
+	font-size: small;
+}
+
+.activate-linux {
+  color: rgba(250, 250, 250, 0.5);
+
+  &.background {
+    background: none;
+  }
+}
+.quotes {
+	color: rgba(#fbf1c7, 1.0);
+	padding: 10px; // adiciona se quiseres espaço interno
+  
+	&.background {
+	  background-color: rgba(#32302f, 1.0);
+	  border: 2px solid #fbf1c7;
+
+	}
+  }
+
+ .cal {
+		color: rgba(#fbf1c7, 1.0);
+		background-color: rgba(#32302f, 1.0);
+		padding: 5px;
+		padding-bottom: 10px;
+	}
+.cal-box{
+	background-color: rgba(#32302f, 1.0);
+	padding-top: 20px;
+	border: 2px solid #fbf1c7;
+}
+
+
+	.cal:selected {
+		color: red;
+	}
+	.cal:indeterminate {
+		color: #427b58;
+	}
+.wallpaper-box {
+	border: 4px solid #fbf1c7;
+}
