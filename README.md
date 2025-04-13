@@ -56,7 +56,7 @@ cp -r ~/dotfiles/* ~/.config/
 
 - This setup has been tested on **Arch Linux** (it should work on others with slight adjustments).
 - I use **Wayland**, so some X11 programs may not work properly without wrappers like `xwayland`. **WARNING**: u might need to add desktop rules to make progrmas as discord or spotify run in native wayland.
-
+- I get my wallpapers at: https://gruvbox-wallpapers.pages.dev/
 ---
 
 ## 📸 Gallery
