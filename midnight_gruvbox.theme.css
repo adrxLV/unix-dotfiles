@@ -1,0 +1,106 @@
+﻿/**
+ * @name gru0vbox-vermelho
+ * @description A dark theme with Gruvbox colors focused on red shades for Discord.
+ * @author refact0r - moded by @adrx_lv "Anomaly".
+ * @version 2.0.1
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: 'JetBrainsMono Nerd Font';
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --move-top-bar-buttons: off;
+    --custom-app-top-bar-height: 32px;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --dms-icon: on;
+    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--red-1), var(--red-2), var(--yellow-1));
+    --background-image: off;
+    --background-image-url: url('');
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+    --flipped-chatbar: on;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+    --small-user-panel: off;
+}
+
+/* Gruvbox Red Palette */
+:root {
+    --colors: on;
+
+    /* text colors */
+    --text-0: var(--bg-4);
+    --text-1: #ebdbb2;
+    --text-2: #fb4934; /* Gruvbox red */
+    --text-3: #b8bb26; /* Gruvbox green */
+    --text-4: #8ec07c;
+    --text-5: #7c6f64;
+
+    /* background and dark colors */
+    --bg-1: #3c3836;
+    --bg-2: #3c3836;
+    --bg-3: #282828;
+    --bg-4: #1d2021;
+    --hover: #504945;
+    --active: #7c6f64;
+    --active-2: #928374;
+    --message-hover: #504945;
+
+    /* accent colors */
+    --accent-1: #fb4934; /* Gruvbox red */
+    --accent-2: #d79921; /* Gruvbox yellow */
+    --accent-3: #b8bb26;
+    --accent-4: #83a598;
+    --accent-5: #83a598;
+    --accent-new: var(--accent-2);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+    /* status indicator colors */
+    --online: #98971a;
+    --dnd: #fb4934; /* Gruvbox red */
+    --idle: #d79921;
+    --streaming: #d65d0e;
+    --offline: #7c6f64;
+
+    /* border colors */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --button-border: hsl(220, 0%, 100%, 0.1);
+
+    /* base colors */
+    --red-1: #fb4934; /* Gruvbox red */
+    --red-2: #cc241d; /* Gruvbox dark red */
+    --green-1: #8ec07c; /* Gruvbox green */
+    --green-2: #b8bb26;
+    --blue-1: #83a598;
+    --blue-2: #458588;
+    --yellow-1: #d79921;
+    --yellow-2: #fabd2f;
+    --purple-1: #b16286;
+    --purple-2: #d3869b;
+}
