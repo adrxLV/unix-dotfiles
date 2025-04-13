@@ -81,6 +81,10 @@ cp -r ~/dotfiles/.config/ ~/.config/
 ├── vencord/
 ├── waybar/
 └── wofi/
+.bashrc (my bash startup file)
+LICENSE
+README.md 
+midnight_gruvbox.theme.css (Discord theme)
 ```
 
 ---
