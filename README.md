@@ -45,7 +45,7 @@ git clone https://github.com/your-username/dotfiles.git ~/dotfiles
 3. **Copy the files to the appropriate location:**
 
 ```bash
-cp -r ~/dotfiles/* ~/.config/
+cp -r ~/dotfiles/.config/ ~/.config/
 ```
 
 4. **Restart your system.**
