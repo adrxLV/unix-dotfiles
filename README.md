@@ -1,79 +1,140 @@
 # 🎨 My Hyprland Rice Dotfiles
 
-Welcome to my dotfiles for my Hyprland Gruvbox Rice. This setup is designed to be "minimalistic", functional, and aesthetically pleasing focusing on productivity. **It is still in development**.
+Welcome to my dotfiles for my Hyprland Gruvbox Rice! This setup is designed to be minimalistic, functional, and aesthetically pleasing, with a focus on productivity.  
+**Note: This configuration is still under development.**
 
 ---
 
 ## 🖥️ Preview
 
-![20250413_02h03m48s_grim](https://github.com/user-attachments/assets/e422f9e9-af22-4d11-bac8-fe0f38bc2085) ![20250413_02h07m48s_grim](https://github.com/user-attachments/assets/91f344c2-b9b0-43ae-a639-a2901e09ea5d)
+![Preview](https://github.com/user-attachments/assets/09e0a4f9-b2f6-4a6f-9388-0e51952864fa)
 
 ---
 
 ## 📦 Required Programs
 
-Before using these dotfiles, make sure to have these programs installed on your system:
+Before using these dotfiles, ensure you have the following programs installed on your system:
 
-- **Kitty** (or **Alacritty**) – A fast and highly configurable terminal.  
-- **Dunst** – A simple and efficient notification manager.  
-- **Elkowar Wacky Widgets** – widgets client to enhance aesthetics.  
-- **Fastfetch** (or **Neofetch**) – A system information tool for the terminal. I personally prefer **Fastfetch**.  
-- **Hypridle** – Idle manager for Hyprland.  
-- **Hyprland** – The Wayland compositor that serves as the base for the setup.  
-- **Hyprpaper** – Wallpaper setter for Hyprland environments.  
-- **Spicetify** – Tool to customize Spotify.  
-- **Vencord** – Tool to customize Discord.  
-- **Waybar** – Status bar for Wayland.  
-- **Wofi** – Lightweight application launcher for Wayland.
+- **Kitty** (or **Alacritty**)
+- **Dunst** 
+- **Elkowar Wacky Widgets**
+- **Fastfetch** (or **Neofetch**) 
+- **Hypridle**
+- **Hyprland**
+- **Hyprpaper**
+- **Spicetify**
+- **Vencord**
+- **Waybar**
+- **Wofi**
 
 ---
 
 ## 🔤 Fonts Used
 
-- [JetBrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads#jetbrainsmono)  
-- [Symbols Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/NerdFontsSymbolsOnly.zip)  
-- [Iosevka](https://typeof.net/Iosevka/)  
+- [JetBrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads#jetbrainsmono)
+- [Symbols Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/NerdFontsSymbolsOnly.zip)
+- [Iosevka](https://typeof.net/Iosevka/)
 - [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads#firacode)
 
 ---
 
-## ⚙️ Installation Instructions
+## ⚙️ Installation
 
 1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/dotfiles.git ~/dotfiles
+   ```
 
-```bash
-git clone https://github.com/your-username/dotfiles.git ~/dotfiles
-```
+2. **Install the required programs**  
+   Use your preferred package manager (e.g., `pacman`, `apt`, `nix`, `paru`, etc.) to install the dependencies listed above.
 
-2. **Install the required programs listed above.**  
-   (You can use your preferred package manager, such as `pacman`, `apt`, `nix`, `paru`, etc.)
+3. **Copy the configuration files:**
+   ```bash
+   cp -r ~/dotfiles/.config/ ~/.config/
+   ```
 
-3. **Copy the files to the appropriate location:**
+4. **Restart your system** or re-login to apply the changes.
 
-```bash
-cp -r ~/dotfiles/.config/ ~/.config/
-```
+---
 
-4. **Restart your system.**
+## ⌨️ Keybinds
+
+All keybinds use the **Super (Windows)** key as the main modifier.
+
+### Application Shortcuts
+| Keybind | Action |
+|---------|--------|
+| `Super + Return` | Open terminal (Kitty) |
+| `Super + D` | Open application launcher (Wofi) |
+| `Super + E` | Open file manager (Thunar) |
+| `Super + Shift + F` | Open file manager |
+| `Super + B` | Open browser (Zen Browser) |
+| `Super + Print` | Take screenshot (selection) |
+
+### Window Management
+| Keybind | Action |
+|---------|--------|
+| `Super + Q` | Kill active window |
+| `Super + M` | Exit Hyprland |
+| `Super + V` | Toggle floating mode |
+| `Super + P` | Toggle pseudotile (dwindle) |
+| `Super + J` | Toggle split direction (dwindle) |
+
+### Focus Movement
+| Keybind | Action |
+|---------|--------|
+| `Super + ←` | Move focus left |
+| `Super + →` | Move focus right |
+| `Super + ↑` | Move focus up |
+| `Super + ↓` | Move focus down |
+
+### Workspace Navigation
+| Keybind | Action |
+|---------|--------|
+| `Super + 1-9` | Switch to workspace 1-9 |
+| `Super + 0` | Switch to workspace 10 |
+| `Super + Scroll Up` | Previous workspace |
+| `Super + Scroll Down` | Next workspace |
+
+### Window-to-Workspace Movement
+| Keybind | Action |
+|---------|--------|
+| `Super + Shift + 1-9` | Move window to workspace 1-9 |
+| `Super + Shift + 0` | Move window to workspace 10 |
+
+### Special Workspace (Scratchpad)
+| Keybind | Action |
+|---------|--------|
+| `Super + S` | Toggle special workspace |
+| `Super + Shift + S` | Move window to special workspace |
+
+### Window Manipulation
+| Keybind | Action |
+|---------|--------|
+| `Super + Left Click + Drag` | Move window |
+| `Super + Right Click + Drag` | Resize window |
 
 ---
 
 ## 📝 Notes
 
-- This setup has been tested on **Arch Linux** (it should work on others with slight adjustments).
-- I use **Wayland**, so some X11 programs may not work properly without wrappers like `xwayland`. **WARNING**: u might need to add desktop rules to make programs like Discord or Spotify run in native Wayland.
-- I get my wallpapers at: https://gruvbox-wallpapers.pages.dev/
+- These dotfiles were tested on **Arch Linux** but should work on other distros with minor adjustments.
+- The setup is designed for **Wayland**; some X11 applications may require `xwayland` wrappers.  
+  **Warning:** You may need to set desktop rules for apps like Discord or Spotify to make them run natively on Wayland.
+- I get my wallpapers from: [gruvbox-wallpapers.pages.dev](https://gruvbox-wallpapers.pages.dev/).
 
 ---
 
 ## 📸 Gallery
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
-  <img src="https://github.com/user-attachments/assets/8b460b98-7231-4b1d-8c97-208a48498eed" alt="Gallery 1" style="max-width: 45%; height: auto;"> 
-  <img src="https://github.com/user-attachments/assets/10298e11-1dba-4596-b5e3-aabb5f42d44f" alt="Gallery 2" style="max-width: 45%; height: auto;"> 
-  <img src="https://github.com/user-attachments/assets/4c7b5ea5-7e86-41b0-bd4a-e83becc39030" alt="Gallery 3" style="max-width: 45%; height: auto;"> 
-  <img src="https://github.com/user-attachments/assets/af5f65f0-af08-4cfe-aba8-1f1c15bda0da" alt="Gallery 4" style="max-width: 45%; height: auto;"> 
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/09e0a4f9-b2f6-4a6f-9388-0e51952864fa" alt="Gallery 1" style="max-width: 45%; height: auto;">
+  <img src="https://github.com/user-attachments/assets/10298e11-1dba-4596-b5e3-aabb5f42d44f" alt="Gallery 2" style="max-width: 45%; height: auto;">
+  <img src="https://github.com/user-attachments/assets/4c7b5ea5-7e86-41b0-bd4a-e83becc39030" alt="Gallery 3" style="max-width: 45%; height: auto;">
+  <img src="https://github.com/user-attachments/assets/af5f65f0-af08-4cfe-aba8-1f1c15bda0da" alt="Gallery 4" style="max-width: 45%; height: auto;">
 </div>
+
+*All themes and color schemes across the programs remain consistent. The bar keeps being the same as the one in the first printsc.*
 
 ---
 
@@ -84,7 +145,7 @@ cp -r ~/dotfiles/.config/ ~/.config/
 ├── alacritty/
 ├── kitty/
 ├── dunst/
-├── fastfetch/ 
+├── fastfetch/
 ├── neofetch/
 ├── hypr/
 ├── hypridle/
@@ -93,20 +154,15 @@ cp -r ~/dotfiles/.config/ ~/.config/
 ├── vencord/
 ├── waybar/
 └── wofi/
-.bashrc (my bash startup file)
+.bashrc                   # Bash startup file
 LICENSE
-README.md 
-midnight_gruvbox.theme.css (Discord theme)
+README.md
+midnight_gruvbox.theme.css  # Discord theme
 ```
-
----
-
-## 💬 Feedback
-
-If you'd like to suggest improvements or just have a chat about customizations, feel free to send a message or open an issue!
 
 ---
 
 ## 🔐 License
 
-These dotfiles are licensed under the MIT License. Feel free to use, modify, and distribute as you like — with or without credit.
+These dotfiles are licensed under the MIT License.  
+Feel free to use, modify, and distribute them—with or without credit.
