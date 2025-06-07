@@ -14,7 +14,7 @@
 }
 .quotes {
 	color: rgba(#fbf1c7, 1.0);
-	padding: 10px; // adiciona se quiseres espaço interno
+	padding: 10px; 
   
 	&.background {
 	  background-color: rgba(#32302f, 1.0);
@@ -44,4 +44,15 @@
 	}
 .wallpaper-box {
 	border: 4px solid #fbf1c7;
+	
 }
+
+
+.poster-box {
+  border: 2px solid #fbf1c7;
+  padding: 0;
+  background: transparent;
+  
+}
+
+
