@@ -28,7 +28,7 @@
   ],
 
   "custom-arrow-left": {
-    "format": "",
+    "format": "->",
     "tooltip": false
   },
 
