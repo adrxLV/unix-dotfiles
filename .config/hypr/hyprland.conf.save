@@ -37,7 +37,6 @@ monitor=,preferred,auto,1.25
 $terminal = kitty
 $fileManager = thunar
 $menu = wofi --style ~/.config/wofi/config.css --show drun
-$browser = flatpak run app.zen_browser.zen
 
 
 #################
@@ -47,17 +46,12 @@ $browser = flatpak run app.zen_browser.zen
 # Autostart necessary processes (like notifications daemons, status bars, etc.)
 # Or execute your favorite apps at launch like this:
 
- exec-once = dunst
  exec-once = $terminal
 # exec-once = nm-applet &
  exec-once = waybar & hyprpaper
- exec-once = $terminal unimatrix -c red
+ exec-once = $terminal unimatrix -n -s 96 -l 'o'
  exec-once = $terminal ~/pipes.sh/pipes.sh
  exec-once = hyprpm reload -n
- exec-once = eww open quotes
- exec-once = eww open calendario
- exec-once = eww open activate-linux
-  exec-once = eww open wallpaper-box
 #############################
 ### ENVIRONMENT VARIABLES ###
 #############################
@@ -100,13 +94,13 @@ decoration {
     rounding_power = 4
 
     # Change transparency of focused and unfocused windows
-    active_opacity = 0.99999
-    inactive_opacity = 0.8555
+    active_opacity = 0.95
+    inactive_opacity = 0.8
 
     shadow {
         enabled = true
-        range = 30
-        render_power = 10
+        range = 4
+        render_power = 3
         color = rgba(1a1a1aee)
     }
 
@@ -195,7 +189,7 @@ input {
     sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
 
     touchpad {
-        natural_scroll = true
+        natural_scroll = false
     }
 }
 
@@ -229,8 +223,6 @@ bind = $mainMod, D, exec, $menu
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, Print, exec, grim -g "$(slurp)"
-bind = $mainMod, B, exec, $browser
-bind = $mainMod SHIFT, F, exec, $fileManager
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
